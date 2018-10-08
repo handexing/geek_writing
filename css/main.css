@@ -70,7 +70,8 @@
 .layui-body{overflow:hidden; border-top:5px solid #1AA094;border-left:2px solid #1AA094;height: 93%;}
 .layui-tab-content{ height:100%; padding:0; }
 .layui-tab-item{ position: absolute; top: 41px; bottom:0; left: 0; right: 0; padding: 0; margin: 0; -webkit-overflow-scrolling:touch; overflow:auto;}
-.layui-tab-title .layui-this{ background-color:#1AA094; color:#fff; }
+/*handx**/
+.layui-tab-title .layui-this{color:#1EC38B;border-left: 1px solid gainsboro;border-right: 1px solid gainsboro;}
 .layui-tab-title .layui-this:after{ border:none; }
 .layui-tab-title li cite{ font-style: normal; padding-left:5px; }
 .clildFrame.layui-tab-content{ padding-right: 0; }
@@ -196,3 +197,4 @@ box-shadow:2px 2px 10px #909090;/*opera或ie9*/}
 .navBar .layui-nav .layui-nav-item a:hover{color: #1EC38B;}
 
 .hideMenu:hover{color: #1EC38B;}
+

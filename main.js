@@ -8,7 +8,7 @@ let win;
 
 function createWindow () {
   // 创建浏览器窗口。
-  win = new BrowserWindow({width: 1200,height: 890,minWidth:1200,minHeight:890,frame: true})
+  win = new BrowserWindow({width: 1200,height: 890,minWidth:1200,minHeight:890,frame: true,center:true,titleBarStyle:'hidden-inset'})
   //frame: false 边框 resizable:false 是否可以最大化
   
   /*win.setFullScreen(true);*/
