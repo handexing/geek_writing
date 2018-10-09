@@ -1,3 +1,6 @@
+var ipcRenderer = require('electron').ipcRenderer;
+var isBig = true;
+
 layui.config({
 	base : "js/"
 }).use(['form','layer'],function(){
@@ -18,4 +21,24 @@ layui.config({
 		window.location.href = "../../main.html";
 		return false;
 	})
+	
+	//关闭窗口
+	$(".close").click(function() {
+		ipcRenderer.send('window-all-closed');
+	});
+	//最大化
+	$(".max").click(function() {
+		if(isBig) {
+			$(this).children().attr('class', 'iconfont icon-zuidahua');
+			ipcRenderer.send('show-window');
+		} else {
+			$(this).children().attr('class', 'iconfont icon-fangxingweixuanzhong');
+			ipcRenderer.send('orignal-window');
+		}
+		isBig = !isBig;
+	});
+	//最小化
+	$(".min").click(function() {
+		ipcRenderer.send('hide-window');
+	});
 })

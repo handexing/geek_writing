@@ -7,3 +7,13 @@ body{overflow:hidden;}
 .form_code{ position:relative; }
 .form_code .code{ position:absolute; right:0; top:1px; cursor:pointer; }
 .login_btn{ width:100%; }
+
+#head_menu{float: right;margin-right: 25px;}
+#head_menu li{color: #fff;float: left;line-height: 60px;padding-left: 15px;cursor:pointer;}
+
+#head_menu .lockcms:hover{color: #1EC38B;}
+#head_menu .min:hover{color: green;font-weight: bold;}
+#head_menu .max:hover{color: yellow;font-weight: bold;}
+#head_menu .close:hover{color: red;font-weight: bold;}
+
+.logo{ color: #fff; float: left; line-height:60px; font-size:20px; padding:0 10px; text-align: center; width:150px;}
