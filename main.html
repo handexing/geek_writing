@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="css/font_tnyc012u2rlwstt9.css" media="all" />
 	<link rel="stylesheet" href="css/iconfont.css" />
 	<link rel="stylesheet" href="css/main.css" media="all" />
+	<link rel="stylesheet" href="css/contextMenu.css" />
 	
 	<style type="text/css">
 		.no_drag{-webkit-app-region: no-drag}
@@ -25,7 +26,7 @@
 <body class="main_body">
 	<div class="layui-layout layui-layout-admin">
 		<!-- 顶部 -->
-		<div class="layui-header header yes_drag">
+		<div class="layui-header header yes_drag" style="background-color:#272822;">
 			<div class="layui-main">
 				
 				<div class="logo" style="cursor: pointer;"><img src="images/logo.ico" width="35" height="35"/>&nbsp;&nbsp;极客写作</div>
@@ -37,7 +38,13 @@
 					<i class="layui-icon" data-icon="&#xe615;" style="cursor: pointer;border-left: 1px solid gainsboro;padding-left: 5px;">&#xe615;</i>
 			    </div>
 			    <!-- 顶部右侧菜单 -->
-			    <ul class="layui-nav top_menu no_drag">
+			    <ul id="head_menu" class="no_drag">
+			    	<li class="lockcms"><i class="iconfont icon-lock1"></i>锁屏</li>
+			    	<li class="min"><i class="iconfont icon-zuixiaohua"></i></li>
+			    	<li class="max"><i class="iconfont icon-fangxingweixuanzhong"></i></li>
+			    	<li class="close"><i class="iconfont icon-guanbi"></i></li>
+			    </ul>
+			   <!-- <ul class="layui-nav top_menu no_drag">
 			    	<li class="layui-nav-item" mobile>
 			    		<a href="javascript:;" class="mobileAddTab" data-url="page/user/changePwd.html"><i class="iconfont icon-shezhi1" data-icon="icon-shezhi1"></i><cite>设置</cite></a>
 			    	</li>
@@ -55,19 +62,19 @@
 						<dl class="layui-nav-child">
 							<dd><a href="javascript:;" data-url="page/user/userInfo.html"><i class="iconfont icon-zhanghu" data-icon="icon-zhanghu"></i><cite>个人资料</cite></a></dd>
 							<dd><a href="javascript:;" data-url="page/user/changePwd.html"><i class="iconfont icon-shezhi1" data-icon="icon-shezhi1"></i><cite>修改密码</cite></a></dd>
-							<!--<dd><a href="javascript:;" class="changeSkin"><i class="iconfont icon-huanfu"></i><cite>更换皮肤</cite></a></dd>-->
+							<!--<dd><a href="javascript:;" class="changeSkin"><i class="iconfont icon-huanfu"></i><cite>更换皮肤</cite></a></dd>
 							<dd><a href="page/login/login.html" class="signOut"><i class="iconfont icon-loginout"></i><cite>退出</cite></a></dd>
 						</dl>
 					</li>
-				</ul>
+				</ul>-->
 			</div>
 		</div>
 		<!-- 左侧导航 -->
 		<div class="layui-side" style="background-color: #2E3235;">
-			<!--<div class="user-photo">
+			<div class="user-photo">
 				<a class="img" title="我的头像" ><img src="images/face.jpg"></a>
 				<p>你好！<span class="userName">handx</span>, 欢迎登录</p>
-			</div>-->
+			</div>
 			<div class="navBar layui-side-scroll">
 				<ul class="layui-nav layui-nav-tree">
 					<li class="layui-nav-item">
@@ -82,7 +89,7 @@
 							<cite>标签</cite>
 						</a>
 					</li>
-					<li class="layui-nav-item">
+					<li class="layui-nav-item" id="clear_trash">
 						<a href="javascript:;" data-url="page/trash_page.html">
 							<i class="iconfont icon-lajitong" data-icon="icon-lajitong"></i>
 							<cite>垃圾桶</cite>
@@ -101,16 +108,70 @@
 							<span class="layui-nav-more"></span>
 						</a>
 						<dl class="layui-nav-child">
-							<dd>
+							<dd class="category_item">
 								<a href="javascript:;" data-url="page/404.html">
 									<i class="iconfont icon-wenjianjia" data-icon="icon-wenjianjia"></i>
 									<cite>java</cite>
 								</a>
 							</dd>
-							<dd>
+							<dd class="category_item">
 								<a href="javascript:;" data-url="page/login/login.html" target="_blank">
 									<i class="iconfont icon-wenjianjia" data-icon="icon-wenjianjia"></i>
 									<cite>spring</cite>
+								</a>
+							</dd>
+							<dd class="category_item">
+								<a href="javascript:;" data-url="page/404.html">
+									<i class="iconfont icon-wenjianjia" data-icon="icon-wenjianjia"></i>
+									<cite>java</cite>
+								</a>
+							</dd>
+							<dd class="category_item">
+								<a href="javascript:;" data-url="page/404.html">
+									<i class="iconfont icon-wenjianjia" data-icon="icon-wenjianjia"></i>
+									<cite>java</cite>
+								</a>
+							</dd>
+							<dd class="category_item">
+								<a href="javascript:;" data-url="page/404.html">
+									<i class="iconfont icon-wenjianjia" data-icon="icon-wenjianjia"></i>
+									<cite>java</cite>
+								</a>
+							</dd>
+							<dd class="category_item">
+								<a href="javascript:;" data-url="page/404.html">
+									<i class="iconfont icon-wenjianjia" data-icon="icon-wenjianjia"></i>
+									<cite>java</cite>
+								</a>
+							</dd>
+							<dd class="category_item">
+								<a href="javascript:;" data-url="page/404.html">
+									<i class="iconfont icon-wenjianjia" data-icon="icon-wenjianjia"></i>
+									<cite>java</cite>
+								</a>
+							</dd>
+							<dd class="category_item">
+								<a href="javascript:;" data-url="page/404.html">
+									<i class="iconfont icon-wenjianjia" data-icon="icon-wenjianjia"></i>
+									<cite>java</cite>
+								</a>
+							</dd>
+							<dd class="category_item">
+								<a href="javascript:;" data-url="page/404.html">
+									<i class="iconfont icon-wenjianjia" data-icon="icon-wenjianjia"></i>
+									<cite>java</cite>
+								</a>
+							</dd>
+							<dd class="category_item">
+								<a href="javascript:;" data-url="page/404.html">
+									<i class="iconfont icon-wenjianjia" data-icon="icon-wenjianjia"></i>
+									<cite>java</cite>
+								</a>
+							</dd>
+							<dd class="category_item">
+								<a href="javascript:;" data-url="page/404.html">
+									<i class="iconfont icon-wenjianjia" data-icon="icon-wenjianjia"></i>
+									<cite>java</cite>
 								</a>
 							</dd>
 						</dl>
@@ -148,7 +209,10 @@
 	<div class="site-tree-mobile layui-hide"><i class="layui-icon">&#xe602;</i></div>
 	<div class="site-mobile-shade"></div>
 
+	<script type="text/javascript" src="plugins/jquery.min.js" ></script>
+	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
 	<script type="text/javascript" src="plugins/layui/layui.js"></script>
+	<script type="text/javascript" src="js/jquery.contextMenu.min.js" ></script>
 	<script type="text/javascript" src="js/leftNav.js"></script>
 	<script type="text/javascript" src="js/mainConfig.js"></script>
 </body>
