@@ -1,50 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>极客写作</title>
-	<meta name="renderer" content="webkit">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta http-equiv="Access-Control-Allow-Origin" content="*">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="format-detection" content="telephone=no">
-	<link rel="icon" href="favicon.ico">
-	<link rel="stylesheet" href="plugins/layui/css/layui.css" media="all" />
-	<link rel="stylesheet" href="css/font_tnyc012u2rlwstt9.css" media="all" />
-	<link rel="stylesheet" href="css/iconfont.css" />
-	<link rel="stylesheet" href="css/main.css" media="all" />
-	<link rel="stylesheet" href="css/contextMenu.css" />
-	
-	<style type="text/css">
-		.no_drag{-webkit-app-region: no-drag}
-		.yes_drag{-webkit-app-region: drag}
-	</style>
-	
-</head>
-<body class="main_body">
-	<div class="layui-layout layui-layout-admin">
-		<!-- 顶部 -->
-		<div class="layui-header header yes_drag" style="background-color:#272822;">
-			<div class="layui-main">
-				
-				<div class="logo" style="cursor: pointer;"><img src="images/logo.ico" width="35" height="35"/>&nbsp;&nbsp;极客写作</div>
-				<!-- 显示/隐藏菜单 -->
-				<div class="iconfont hideMenu icon-iconset0193 no_drag"></div>
-				<!-- 搜索 -->
-				<div class="layui-form component no_drag">
-					<input type="text" name="title" required  lay-verify="required" placeholder="请输入你要搜索得内容..." autocomplete="off" class="layui-input">
-					<i class="layui-icon" data-icon="&#xe615;" style="cursor: pointer;border-left: 1px solid gainsboro;padding-left: 5px;">&#xe615;</i>
-			    </div>
-			    <!-- 顶部右侧菜单 -->
-			    <ul id="head_menu" class="no_drag">
-			    	<li class="lockcms"><i class="iconfont icon-lock1"></i>锁屏</li>
-			    	<li class="min"><i class="iconfont icon-zuixiaohua"></i></li>
-			    	<li class="max"><i class="iconfont icon-fangxingweixuanzhong"></i></li>
-			    	<li class="close"><i class="iconfont icon-guanbi"></i></li>
-			    </ul>
-			   <!-- <ul class="layui-nav top_menu no_drag">
+
+	<head>
+		<meta charset="utf-8">
+		<title>极客写作</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="icon" href="favicon.ico">
+		<link rel="stylesheet" href="plugins/layui/css/layui.css" media="all" />
+		<link rel="stylesheet" href="css/font_tnyc012u2rlwstt9.css" media="all" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" href="css/main.css" media="all" />
+		<link rel="stylesheet" href="css/contextMenu.css" />
+
+		<style type="text/css">
+			.no_drag {
+				-webkit-app-region: no-drag
+			}
+			
+			.yes_drag {
+				-webkit-app-region: drag
+			}
+		</style>
+
+	</head>
+
+	<body class="main_body">
+		<div class="layui-layout layui-layout-admin">
+			<!-- 顶部 -->
+			<div class="layui-header header yes_drag" style="background-color:#272822;">
+				<div class="layui-main">
+
+					<div class="logo" style="cursor: pointer;"><img src="images/logo.ico" width="35" height="35" />&nbsp;&nbsp;极客写作</div>
+					<!-- 显示/隐藏菜单 -->
+					<div class="iconfont hideMenu icon-iconset0193 no_drag"></div>
+					<!-- 搜索 -->
+					<div class="layui-form component no_drag">
+						<input type="text" name="title" required lay-verify="required" placeholder="请输入你要搜索得内容..." autocomplete="off" class="layui-input">
+						<i class="layui-icon" data-icon="&#xe615;" style="cursor: pointer;border-left: 1px solid gainsboro;padding-left: 5px;">&#xe615;</i>
+					</div>
+					<!-- 顶部右侧菜单 -->
+					<ul id="head_menu" class="no_drag">
+						<li class="lockcms"><i class="iconfont icon-lock1"></i>锁屏</li>
+						<li class="setting" data-url="page/settingPage.html" id="goSettingPage" title="设置"><cite style="display: none;">设置</cite><i class="iconfont icon-icon-setting"></i></li>
+						<li class="min"><i class="iconfont icon-zuixiaohua"></i></li>
+						<li class="max"><i class="iconfont icon-fangxingweixuanzhong"></i></li>
+						<li class="close"><i class="iconfont icon-guanbi"></i></li>
+					</ul>
+					<!-- <ul class="layui-nav top_menu no_drag">
 			    	<li class="layui-nav-item" mobile>
 			    		<a href="javascript:;" class="mobileAddTab" data-url="page/user/changePwd.html"><i class="iconfont icon-shezhi1" data-icon="icon-shezhi1"></i><cite>设置</cite></a>
 			    	</li>
@@ -67,99 +75,134 @@
 						</dl>
 					</li>
 				</ul>-->
+				</div>
 			</div>
-		</div>
-		<!-- 左侧导航 -->
-		<div class="layui-side" style="background-color: #2E3235;">
-			<div class="user-photo">
-				<a class="img" title="我的头像" ><img src="images/face.jpg"></a>
-				<p>你好！<span class="userName">handx</span>, 欢迎登录</p>
+			<!-- 左侧导航 -->
+			<div class="layui-side" style="background-color: #2E3235;">
+				<div class="navBar layui-side-scroll" style="float: left;width: 180px;">
+					<div class="user-photo" style="width: 180px;">
+						<a class="img" title="我的头像"><img src="images/face.jpg"></a>
+						<p>你好！<span class="userName">handx</span>, 欢迎登录</p>
+					</div>
+
+					<div class="mytab">
+						<ul class="my-select-tab">
+							<li class="m_menu"><i class="iconfont icon-caidan1" type="m_menu" style="color: #1EC38B;"></i></li>
+							<li class="m_tag"><i class="iconfont icon-tag" type="m_tag"></i></li>
+							<li class="m_more"><i class="iconfont icon-More" type="m_more"></i></li>
+						</ul>
+						<div style="clear: both;"></div>
+						<div class="my-tab-content">
+							<div class="m_menu_content">
+								<ul class="layui-nav layui-nav-tree" style="width: 180px;">
+									<li class="layui-nav-item">
+										<a href="javascript:;" data-url="page/notes_page.html">
+											<i class="iconfont icon-iconset0117" data-icon="icon-iconset0117"></i>
+											<cite>所有笔记</cite>
+										</a>
+									</li>
+									<li class="layui-nav-item">
+										<a href="javascript:;" data-url="page/tags_page.html">
+											<i class="iconfont icon-tag" data-icon="icon-tag"></i>
+											<cite>标签</cite>
+										</a>
+									</li>
+									<li class="layui-nav-item" id="clear_trash">
+										<a href="javascript:;" data-url="page/trash_page.html">
+											<i class="iconfont icon-lajitong" data-icon="icon-lajitong"></i>
+											<cite>垃圾桶</cite>
+										</a>
+									</li>
+									<li class="layui-nav-item">
+										<a href="javascript:;" data-url="page/starred_page.html">
+											<i class="iconfont icon-star" data-icon="icon-star"></i>
+											<cite>starred</cite>
+										</a>
+									</li>
+									<li class="layui-nav-item">
+										<a href="javascript:;">
+											<i class="iconfont icon-caidan" data-icon="icon-caidan"></i>
+											<cite>我的分类</cite>
+											<span class="layui-nav-more"></span>
+										</a>
+										<dl class="layui-nav-child">
+											<dd class="category_item">
+												<a href="javascript:;" data-url="page/404.html">
+													<i class="iconfont icon-wenjianjia" data-icon="icon-wenjianjia"></i>
+													<cite>java</cite>
+												</a>
+											</dd>
+											<dd class="category_item">
+												<a href="javascript:;" data-url="page/login/login.html" target="_blank">
+													<i class="iconfont icon-wenjianjia" data-icon="icon-wenjianjia"></i>
+													<cite>spring</cite>
+												</a>
+											</dd>
+										</dl>
+									</li>
+									<span class="layui-nav-bar" style="top: 67.5px; height: 0px; opacity: 0;"></span>
+								</ul>
+							</div>
+							<div class="m_tag_content" style="display: none;">
+								<ul>
+									<li>#&nbsp; Java <b>6</b></li>
+									<li>#&nbsp; spring <b>2</b></li>
+									<li>#&nbsp; mysql <b>7</b></li>
+									<li>#&nbsp; mybatis <b>8</b></li>
+									<li>#&nbsp; jpa <b>9</b></li>
+								</ul>
+							</div>
+							<div class="m_more_content" style="display: none;">
+								还在开发~~~
+							</div>
+						</div>
+					</div>
+					<div style="clear: both;"></div>
+
+				</div>
+				<div class="left_menu_details" style="width: 200px;height: 99.9%;float: right;background-color: #FBFBFB;">sdfsdf </div>
 			</div>
-			<div class="navBar layui-side-scroll">
-				<ul class="layui-nav layui-nav-tree">
-					<li class="layui-nav-item">
-						<a href="javascript:;" data-url="page/notes_page.html">
-							<i class="iconfont icon-iconset0117" data-icon="icon-iconset0117"></i>
-							<cite>所有笔记</cite>
-						</a>
-					</li>
-					<li class="layui-nav-item">
-						<a href="javascript:;" data-url="page/tags_page.html">
-							<i class="iconfont icon-tag" data-icon="icon-tag"></i>
-							<cite>标签</cite>
-						</a>
-					</li>
-					<li class="layui-nav-item" id="clear_trash">
-						<a href="javascript:;" data-url="page/trash_page.html">
-							<i class="iconfont icon-lajitong" data-icon="icon-lajitong"></i>
-							<cite>垃圾桶</cite>
-						</a>
-					</li>
-					<li class="layui-nav-item">
-						<a href="javascript:;" data-url="page/starred_page.html">
-							<i class="iconfont icon-star" data-icon="icon-star"></i>
-							<cite>starred</cite>
-						</a>
-					</li>
-					<li class="layui-nav-item">
-						<a href="javascript:;">
-							<i class="iconfont icon-caidan" data-icon="icon-caidan"></i>
-							<cite>我的分类</cite>
-							<span class="layui-nav-more"></span>
-						</a>
-						<dl class="layui-nav-child">
-							<dd class="category_item">
-								<a href="javascript:;" data-url="page/404.html">
-									<i class="iconfont icon-wenjianjia" data-icon="icon-wenjianjia"></i>
-									<cite>java</cite>
-								</a>
-							</dd>
-							<dd class="category_item">
-								<a href="javascript:;" data-url="page/login/login.html" target="_blank">
-									<i class="iconfont icon-wenjianjia" data-icon="icon-wenjianjia"></i>
-									<cite>spring</cite>
-								</a>
-							</dd>
-						</dl>
-					</li>
-					<span class="layui-nav-bar" style="top: 67.5px; height: 0px; opacity: 0;"></span>
-				</ul>
-			</div>
-		</div>
-		<!-- 右侧内容 -->
-		<div class="layui-body layui-form">
-			<div class="layui-tab marg0" lay-filter="bodyTab" id="top_tabs_box">
-				<ul class="layui-tab-title top_tab" id="top_tabs">
-					<li class="layui-this" lay-id=""><i class="iconfont icon-computer"></i> <cite>首页面板</cite></li>
-				</ul>
-				<ul class="layui-nav closeBox">
-				  <li class="layui-nav-item">
-				    <a href="javascript:;"><i class="iconfont icon-caozuo"></i> 页面操作</a>
-				    <dl class="layui-nav-child">
-					  <dd><a href="javascript:;" class="refresh refreshThis"><i class="layui-icon">&#x1002;</i> 刷新当前</a></dd>
-				      <dd><a href="javascript:;" class="closePageOther"><i class="iconfont icon-prohibit"></i> 关闭其他</a></dd>
-				      <dd><a href="javascript:;" class="closePageAll"><i class="iconfont icon-guanbi"></i> 关闭全部</a></dd>
-				    </dl>
-				  </li>
-				</ul>
-				<div class="layui-tab-content clildFrame">
-					<div class="layui-tab-item layui-show">
-						<iframe src="page/indexPage.html"></iframe>
+			<!-- 右侧内容 -->
+			<div class="layui-body layui-form">
+				<div class="layui-tab marg0" lay-filter="bodyTab" id="top_tabs_box">
+					<ul class="layui-tab-title top_tab" id="top_tabs">
+						<li class="layui-this" lay-id=""><i class="iconfont icon-computer"></i> <cite>首页面板</cite></li>
+					</ul>
+					<ul class="layui-nav closeBox">
+						<li class="layui-nav-item">
+							<a href="javascript:;"><i class="iconfont icon-caozuo"></i> 页面操作</a>
+							<dl class="layui-nav-child">
+								<dd>
+									<a href="javascript:;" class="refresh refreshThis"><i class="layui-icon">&#x1002;</i> 刷新当前</a>
+								</dd>
+								<dd>
+									<a href="javascript:;" class="closePageOther"><i class="iconfont icon-prohibit"></i> 关闭其他</a>
+								</dd>
+								<dd>
+									<a href="javascript:;" class="closePageAll"><i class="iconfont icon-guanbi"></i> 关闭全部</a>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+					<div class="layui-tab-content clildFrame">
+						<div class="layui-tab-item layui-show">
+							<iframe src="page/indexPage.html"></iframe>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	
-	<!-- 移动导航 -->
-	<div class="site-tree-mobile layui-hide"><i class="layui-icon">&#xe602;</i></div>
-	<div class="site-mobile-shade"></div>
 
-	<script type="text/javascript" src="plugins/jquery.min.js" ></script>
-	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-	<script type="text/javascript" src="plugins/layui/layui.js"></script>
-	<script type="text/javascript" src="js/jquery.contextMenu.min.js" ></script>
-	<script type="text/javascript" src="js/leftNav.js"></script>
-	<script type="text/javascript" src="js/mainConfig.js"></script>
-</body>
+		<!-- 移动导航 -->
+		<div class="site-tree-mobile layui-hide"><i class="layui-icon">&#xe602;</i></div>
+		<div class="site-mobile-shade"></div>
+
+		<script type="text/javascript" src="plugins/jquery.min.js"></script>
+		<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="plugins/layui/layui.js"></script>
+		<script type="text/javascript" src="js/jquery.contextMenu.min.js"></script>
+		<script type="text/javascript" src="js/leftNav.js"></script>
+		<script type="text/javascript" src="js/mainConfig.js"></script>
+	</body>
+
 </html>

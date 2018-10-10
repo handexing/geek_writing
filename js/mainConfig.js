@@ -205,12 +205,52 @@ layui.config({
 		ipcRenderer.send('hide-window');
 	});
 	//随机给文件夹配置颜色
-	var colors= new Array("green","red","orange","orangered","cornsilk","blanchedalmond","white","floralwhite",
-	"ghostwhite","papayawhip","deeppink","greenyellow","yellowgreen","lightyellow","dodgerblue");
-	
+	var colors = new Array("green", "red", "orange", "orangered", "cornsilk", "blanchedalmond", "white", "floralwhite",
+		"ghostwhite", "papayawhip", "deeppink", "greenyellow", "yellowgreen", "lightyellow", "dodgerblue");
+
 	$(".category_item").each(function() {
-		var num = Math.round(Math.random()*14);
-		$(this).find("a").attr("style","color:"+colors[num]);
+		var num = Math.round(Math.random() * 14);
+		$(this).find("a").attr("style", "color:" + colors[num]);
+	});
+
+	//设置
+	$(".setting").click(function() {
+		addTab($("#goSettingPage"));
+	});
+
+	//左侧菜单切换
+	$(".mytab .my-select-tab i").click(function() {
+
+		var type = $(this).attr("type");
+
+		if(type == "m_menu") {
+			
+			$(".m_menu").find("i").attr("style", "color: #1EC38B;");
+			$(".m_tag").find("i").attr("style", "color: #fff;");
+			$(".m_more").find("i").attr("style", "color: #fff;");
+			
+			$(".m_menu_content").attr("style", "display: block;");
+			$(".m_tag_content").attr("style", "display: none;");
+			$(".m_more_content").attr("style", "display: none;");
+		} else if(type == "m_tag") {
+			
+			$(".m_tag").find("i").attr("style", "color: #1EC38B;");
+			$(".m_menu").find("i").attr("style", "color: #fff;");
+			$(".m_more").find("i").attr("style", "color: #fff;");
+			
+			$(".m_menu_content").attr("style", "display: none;");
+			$(".m_tag_content").attr("style", "display: block;");
+			$(".m_more_content").attr("style", "display: none;");
+		} else if(type == "m_more") {
+			
+			$(".m_more").find("i").attr("style", "color: #1EC38B;");
+			$(".m_tag").find("i").attr("style", "color: #fff;");
+			$(".m_menu").find("i").attr("style", "color: #fff;");
+			
+			$(".m_menu_content").attr("style", "display: none;");
+			$(".m_tag_content").attr("style", "display: none;");
+			$(".m_more_content").attr("style", "display: block;");
+		}
 	});
 
 	//退出
@@ -409,4 +449,9 @@ layui.config({
 //打开新窗口
 function addTab(_this) {
 	tab.tabAdd(_this);
+}
+
+//打开新窗口 自定义
+function openNewTab(_this) {
+	tab.openNewTab(_this);
 }

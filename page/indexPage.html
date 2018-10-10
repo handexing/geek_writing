@@ -20,8 +20,19 @@
 
 	</head>
 
-	<body class="childrenBody" style="background-color: whitesmoke;">
-		<div style="padding: 20px;">
+	<body style="background-color: whitesmoke;">
+		面板
+		<div class="layui-tab layui-tab-brief">
+						<ul class="layui-tab-title">
+							<li class="layui-this">网站设置</li>
+							<li>用户管理</li>
+						</ul>
+						<div class="layui-tab-content" style="height: 100px;">
+							<div class="layui-tab-item layui-show">内容不一样是要有，因为你可以监听tab事件（阅读下文档就是了）</div>
+							<div class="layui-tab-item">内容2</div>
+						</div>
+					</div>
+		<!--<div style="padding: 20px;">
 			<div class="layui-row layui-col-space15">
 				<div class="layui-col-md4">
 					<div class="layui-card">
@@ -51,17 +62,38 @@
 					<div class="layui-card">
 						<div class="layui-card-header">数据概框</div>
 						<div class="layui-card-body">
-							数据概框~
+							<div class="layui-row layui-col-space15">
+								<div class="layui-col-md2">
+									<p class="layui-elem-quote">共写&nbsp;<b style="color:orangered;">153355</b>&nbsp;字.</p>
+								</div>
+								<div class="layui-col-md2">
+									<p class="layui-elem-quote">共耗时&nbsp;<b style="color:deepskyblue;">56</b>&nbsp;分钟.</p>
+								</div>
+								<div class="layui-col-md2">
+									<p class="layui-elem-quote">共&nbsp;<b style="color:lightseagreen;">89</b>&nbsp;人阅读.</p>
+								</div>
+								<div class="layui-col-md2">
+									<p class="layui-elem-quote">共&nbsp;<b style="color:green;">156</b>&nbsp;个评论.</p>
+								</div>
+								<div class="layui-col-md2">
+									<p class="layui-elem-quote">共&nbsp;<b style="color:#1EC38B;">259</b>&nbsp;个喜欢.</p>
+								</div>
+								<div class="layui-col-md2">
+									<p class="layui-elem-quote">更多...</p>
+								</div>
+								<fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+									<legend style="font-size: 14px;color: #1EC38B;">近一个月周写作字数变化</legend>
+								</fieldset>
+								
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
+			</div>-->
 	</body>
 
 	<script type="application/javascript" src="../plugins/jquery.min.js"></script>
-	<script type="text/javascript" src="../plugins/layui/layui.js"></script>
-	<script type="text/javascript" src="../plugins/layer/2.4/layer.js"></script>
+	<script type="text/javascript" src="../plugins/layui-2.2/layui.all.js" ></script>
 	<script type="text/javascript" src="../js/indexConfig.js"></script>
 
 	<script type="application/javascript">
