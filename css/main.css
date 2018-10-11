@@ -12,7 +12,7 @@
 .showMenu .layui-body,.showMenu .layui-footer,.showMenu.layui-layout-admin .layui-side,.logo,.top_menu .layui-nav-item[pc],.component,.top_menu .layui-nav-item[mobile],.layui-nav,.layui-layout-admin .layui-main,.site-mobile .layui-side,.layui-layout-admin .layui-side,.site-mobile .site-tree-mobile,.layui-body,.layui-layout-admin .layui-footer,.layui-layout-admin .layui-side,.panel,.panel .panel_icon i{ transition: all 0.3s ease-in-out;-webkit-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-ms-transition: all 0.3s ease-in-out; }
 
 
-.showMenu.layui-layout-admin .layui-side{ left:-385px; }
+.showMenu.layui-layout-admin .layui-side{ left:-485px; }
 .showMenu .layui-body,.showMenu .layui-footer{ left:0; }
 .layui-layout-admin .layui-main{ margin:0; }
 .logo{ color: #fff; float: left; line-height:60px; font-size:20px; padding:0 25px; text-align: center; width:150px;}
@@ -67,7 +67,7 @@
 .closeBox .layui-nav-bar{ display:none; }
 .closeBox .icon-caozuo{ font-size: 20px; position:absolute; top:1px; left:-2px; }
 /**handx*/
-.layui-body{overflow:hidden;border-left:1px solid #1EC38B;border-top: 1px solid #1EC38B;height: 93%;}
+.layui-body{overflow:hidden;height: 93%;}
 .layui-tab-content{ height:100%; padding:0; }
 .layui-tab-item{ position: absolute; top: 41px; bottom:0; left: 0; right: 0; padding: 0; margin: 0; -webkit-overflow-scrolling:touch; overflow:auto;}
 /*handx**/

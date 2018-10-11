@@ -14,9 +14,9 @@ let win;
 function createWindow() {
 	// 创建浏览器窗口。
 	win = new BrowserWindow({
-		width: 1200,
+		width: 1400,
 		height: 890,
-		minWidth: 1200,
+		minWidth: 1400,
 		minHeight: 890,
 		frame: false,
 		center: true,
