@@ -49,9 +49,10 @@
 
 .icon-zuidahua:before { content: "\e534"; }
 
-.icon-lajitong:before { content: "\e62b"; }
+.icon-trash:before { content: "\e62b"; }
 
 .icon-star:before { content: "\e730"; }
 
 .icon-huanyuan:before { content: "\e7ae"; }
 
+.icon-biji:before { content: "\e649"; }

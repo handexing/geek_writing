@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>极客写作</title>
+		<title>极客创作</title>
 		<meta name="renderer" content="webkit">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta http-equiv="Access-Control-Allow-Origin" content="*">
@@ -17,6 +17,7 @@
 		<link rel="stylesheet" href="css/iconfont.css" />
 		<link rel="stylesheet" href="css/main.css" media="all" />
 		<link rel="stylesheet" href="css/contextMenu.css" />
+		<link rel="stylesheet" href="css/font_tnyc012u2rlwstt9.css" />
 
 		<style type="text/css">
 			.no_drag {
@@ -36,7 +37,7 @@
 			<div class="layui-header header yes_drag" style="background-color:#252728;">
 				<div class="layui-main">
 
-					<div class="logo" style="cursor: pointer;"><img src="images/logo.ico" width="35" height="35" class="layui-circle"/>&nbsp;&nbsp;极客写作</div>
+					<div class="logo" style="cursor: pointer;"><img src="images/logo.ico" width="35" height="35" class="layui-circle"/>&nbsp;&nbsp;极客创作</div>
 					<!-- 显示/隐藏菜单 -->
 					<div class="iconfont hideMenu icon-iconset0193 no_drag"></div>
 					<!-- 搜索 -->
@@ -48,34 +49,11 @@
 					<ul id="head_menu" class="no_drag">
 						<li><img src="images/face.jpg" width="25" height="25" class="layui-circle"></li>
 						<li class="lockcms"><i class="iconfont icon-lock1"></i>锁屏</li>
-						<li class="setting" data-url="page/settingPage.html" id="goSettingPage" title="设置"><cite style="display: none;">设置</cite><i class="iconfont icon-icon-setting"></i></li>
+						<li class="setting" data-url="page/setting_page.html" id="goSettingPage" title="设置"><cite style="display: none;">设置</cite><i class="iconfont icon-icon-setting"></i></li>
 						<li class="min"><i class="iconfont icon-zuixiaohua"></i></li>
 						<li class="max"><i class="iconfont icon-fangxingweixuanzhong"></i></li>
 						<li class="close"><i class="iconfont icon-guanbi"></i></li>
 					</ul>
-					<!-- <ul class="layui-nav top_menu no_drag">
-			    	<li class="layui-nav-item" mobile>
-			    		<a href="javascript:;" class="mobileAddTab" data-url="page/user/changePwd.html"><i class="iconfont icon-shezhi1" data-icon="icon-shezhi1"></i><cite>设置</cite></a>
-			    	</li>
-			    	<li class="layui-nav-item" mobile>
-			    		<a href="page/login/login.html" class="signOut"><i class="iconfont icon-loginout"></i> 退出</a>
-			    	</li>
-					<li class="layui-nav-item lockcms" pc>
-						<a href="javascript:;"><i class="iconfont icon-lock1"></i><cite>锁屏</cite></a>
-					</li>
-					<li class="layui-nav-item" pc>
-						<a href="javascript:;">
-							<img src="images/face.jpg" class="layui-circle" width="35" height="35">
-							<cite>handx</cite>
-						</a>
-						<dl class="layui-nav-child">
-							<dd><a href="javascript:;" data-url="page/user/userInfo.html"><i class="iconfont icon-zhanghu" data-icon="icon-zhanghu"></i><cite>个人资料</cite></a></dd>
-							<dd><a href="javascript:;" data-url="page/user/changePwd.html"><i class="iconfont icon-shezhi1" data-icon="icon-shezhi1"></i><cite>修改密码</cite></a></dd>
-							<!--<dd><a href="javascript:;" class="changeSkin"><i class="iconfont icon-huanfu"></i><cite>更换皮肤</cite></a></dd>
-							<dd><a href="page/login/login.html" class="signOut"><i class="iconfont icon-loginout"></i><cite>退出</cite></a></dd>
-						</dl>
-					</li>
-				</ul>-->
 				</div>
 			</div>
 			<!-- 左侧导航 -->
@@ -99,7 +77,7 @@
 									</li>
 									<li class="layui-nav-item" id="clear_trash">
 										<a href="javascript:;" data-url="page/trash_page.html">
-											<i class="iconfont icon-lajitong" data-icon="icon-lajitong"></i>
+											<i class="iconfont icon-trash" data-icon="icon-trash"></i>
 											<cite>垃圾桶</cite>
 										</a>
 									</li>
@@ -120,6 +98,12 @@
 												<a href="javascript:;" data-url="page/404.html">
 													<i class="iconfont icon-wenjianjia" data-icon="icon-wenjianjia"></i>
 													<cite>java</cite>
+												</a>
+											</dd>
+											<dd class="category_item">
+												<a href="javascript:;" data-url="page/404.html">
+													<i class="iconfont icon-wenjianjia" data-icon="icon-wenjianjia"></i>
+													<cite>jjjjj</cite>
 												</a>
 											</dd>
 											<dd class="category_item">
@@ -148,7 +132,58 @@
 						</div>
 					</div>
 				</div>
-				<div class="left_menu_details" style="width: 280px;height: 99.95%;float: right;background-color: #FBFBFB;">sdfsdf </div>
+				<div class="left_menu_details" style="width: 280px;height: 99.95%;float: right;background-color: #FBFBFB;border-right:1px solid gainsboro;">
+					<ul>
+						<li class="openNote" data-url="page/note_page.html" id="goNotePage_1">
+							<cite style="display: none;">java多线程详解</cite>
+							<span class="title"><img src="images/note.png" width="20" height="20"/> <span>java多线程详解~</span></span>
+							<p>修改时间：2018-08-12 12:23:36</p>
+							<div class="m_badge">
+								<span class="tag_rim">#java</span>
+							</div>
+						</li>
+						<li class="openNote" data-url="page/note_page.html" id="goNotePage_2">
+							<cite style="display: none;">java多线程详解1</cite>
+							<span class="title"><img src="images/note.png" width="20" height="20"/> <span>java多线程详解1~</span></span>
+							<p>修改时间：2018-08-12 12:23:36</p>
+							<div class="m_badge">
+								<span class="tag_rim">#java</span>
+							</div>
+						</li>
+						<li class="openNote" data-url="page/note_page.html" id="goNotePage_3">
+							<cite style="display: none;">java多线程详解2</cite>
+							<span class="title"><img src="images/note.png" width="20" height="20"/> <span>java多线程详解2~</span></span>
+							<p>修改时间：2018-08-12 12:23:36</p>
+							<div class="m_badge">
+								<span class="tag_rim">#java</span>
+							</div>
+						</li>
+						<li class="openNote" data-url="page/note_page.html" id="goNotePage_4">
+							<cite style="display: none;">java多线程详解3</cite>
+							<span class="title"><img src="images/note.png" width="20" height="20"/> <span>java多线程详解3~</span></span>
+							<p>修改时间：2018-08-12 12:23:36</p>
+							<div class="m_badge">
+								<span class="tag_rim">#java</span>
+							</div>
+						</li>
+						<li class="openNote" data-url="page/note_page.html" id="goNotePage_5">
+							<cite style="display: none;">java多线程详解4</cite>
+							<span class="title"><img src="images/note.png" width="20" height="20"/> <span>java多线程详解4~</span></span>
+							<p>修改时间：2018-08-12 12:23:36</p>
+							<div class="m_badge">
+								<span class="tag_rim">#java</span>
+							</div>
+						</li>
+						<li class="openNote" data-url="page/note_page.html" id="goNotePage_6">
+							<cite style="display: none;">java多线程详解5</cite>
+							<span class="title"><img src="images/note.png" width="20" height="20"/> <span>java多线程详解5~</span></span>
+							<p>修改时间：2018-08-12 12:23:36</p>
+							<div class="m_badge">
+								<span class="tag_rim">#java</span>
+							</div>
+						</li>
+					</ul>	
+				</div>
 			</div>
 			<!-- 右侧内容 -->
 			<div class="layui-body layui-form">
@@ -160,9 +195,9 @@
 						<li class="layui-nav-item">
 							<a href="javascript:;"><i class="iconfont icon-caozuo"></i> 页面操作</a>
 							<dl class="layui-nav-child">
-								<dd>
+								<!--<dd>
 									<a href="javascript:;" class="refresh refreshThis"><i class="layui-icon">&#x1002;</i> 刷新当前</a>
-								</dd>
+								</dd>-->
 								<dd>
 									<a href="javascript:;" class="closePageOther"><i class="iconfont icon-prohibit"></i> 关闭其他</a>
 								</dd>

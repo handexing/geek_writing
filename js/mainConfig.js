@@ -217,6 +217,12 @@ layui.config({
 	$(".setting").click(function() {
 		addTab($("#goSettingPage"));
 	});
+	
+	//打开笔记
+	$(".openNote").click(function() {
+		var id = $(this).attr("id");
+		addTab($("#"+id));
+	});
 
 	//左侧菜单切换
 	$(".mytab .my-select-tab i").click(function() {
