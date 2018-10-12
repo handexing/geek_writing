@@ -33,10 +33,10 @@
 	<body class="main_body">
 		<div class="layui-layout layui-layout-admin">
 			<!-- 顶部 -->
-			<div class="layui-header header yes_drag" style="background-color:#34352C;">
+			<div class="layui-header header yes_drag" style="background-color:#252728;">
 				<div class="layui-main">
 
-					<div class="logo" style="cursor: pointer;"><img src="images/logo.ico" width="35" height="35" />&nbsp;&nbsp;极客写作</div>
+					<div class="logo" style="cursor: pointer;"><img src="images/logo.ico" width="35" height="35" class="layui-circle"/>&nbsp;&nbsp;极客写作</div>
 					<!-- 显示/隐藏菜单 -->
 					<div class="iconfont hideMenu icon-iconset0193 no_drag"></div>
 					<!-- 搜索 -->
@@ -46,6 +46,7 @@
 					</div>
 					<!-- 顶部右侧菜单 -->
 					<ul id="head_menu" class="no_drag">
+						<li><img src="images/face.jpg" width="25" height="25" class="layui-circle"></li>
 						<li class="lockcms"><i class="iconfont icon-lock1"></i>锁屏</li>
 						<li class="setting" data-url="page/settingPage.html" id="goSettingPage" title="设置"><cite style="display: none;">设置</cite><i class="iconfont icon-icon-setting"></i></li>
 						<li class="min"><i class="iconfont icon-zuixiaohua"></i></li>
@@ -80,16 +81,11 @@
 			<!-- 左侧导航 -->
 			<div class="layui-side" style="background-color: #2E3235;">
 				<div class="navBar layui-side-scroll" style="float: left;width: 200px;">
-					<div class="user-photo" style="width: 200px;">
-						<a class="img" title="我的头像"><img src="images/face.jpg"></a>
-						<p>你好！<span class="userName">handx</span>, 欢迎登录</p>
-					</div>
-
 					<div class="mytab">
 						<ul class="my-select-tab">
-							<li class="m_menu"><i class="iconfont icon-caidan1" type="m_menu" style="color: #1EC38B;"></i></li>
-							<li class="m_tag"><i class="iconfont icon-tag" type="m_tag"></i></li>
-							<li class="m_more"><i class="iconfont icon-More" type="m_more"></i></li>
+							<li class="m_menu"><i class="iconfont icon-caidan2" type="m_menu" style="color: #1EC38B;"></i></li>
+							<li class="m_tag"><i class="iconfont icon-tag2" type="m_tag"></i></li>
+							<!--<li class="m_more"><i class="iconfont icon-More" type="m_more"></i></li>-->
 						</ul>
 						<div style="clear: both;"></div>
 						<div class="my-tab-content">
@@ -99,12 +95,6 @@
 										<a href="javascript:;" data-url="page/notes_page.html">
 											<i class="iconfont icon-iconset0117" data-icon="icon-iconset0117"></i>
 											<cite>所有笔记</cite>
-										</a>
-									</li>
-									<li class="layui-nav-item">
-										<a href="javascript:;" data-url="page/tags_page.html">
-											<i class="iconfont icon-tag" data-icon="icon-tag"></i>
-											<cite>标签</cite>
 										</a>
 									</li>
 									<li class="layui-nav-item" id="clear_trash">

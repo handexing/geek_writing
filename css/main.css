@@ -207,9 +207,9 @@ box-shadow:2px 2px 10px #909090;/*opera或ie9*/}
 #head_menu .close:hover{color: red;font-weight: bold;}
 #head_menu .setting:hover{color: orangered;font-weight: bold;}
 
-.mytab .my-select-tab{border-top: 1px solid #272822;border-bottom: 1px solid #272822;width: 99.0%;height: 40px;margin:auto;}
+.mytab .my-select-tab{padding-top: 10px;border-bottom: 1px solid #242728;width: 99.0%;height: 40px;margin:auto;}
 .mytab .my-select-tab li i{color: #fff;font-size: 23px;}
-.mytab .my-select-tab li{color: #fff;float: left;line-height: 40px;cursor:pointer;padding-left: 25px;}
+.mytab .my-select-tab li{color: #fff;float: left;line-height: 40px;cursor:pointer;padding-left: 30px;}
 
 .mytab .my-select-tab i:hover{color: #1EC38B;}
 
