@@ -223,6 +223,13 @@ layui.config({
 		var id = $(this).attr("id");
 		addTab($("#"+id));
 	});
+	
+	//左侧菜单点击事件
+	$(".navBar .layui-nav-item a").click(function() {
+		
+		//TODO
+		$(this).attr("style","color: #1EC38B;");
+	});
 
 	//左侧菜单切换
 	$(".mytab .my-select-tab i").click(function() {

@@ -225,3 +225,6 @@ box-shadow:2px 2px 10px #909090;/*opera或ie9*/}
 .left_menu_details .m_badge{margin-top: 15px;}
 .left_menu_details .m_badge .tag_rim{padding: 2px 5px;border-radius: 3px;background-color: white;font-size: 11px;color: #9C9C9E;}
 .left_menu_details ul li:hover{background-color: #E6E6E6;}
+
+
+.m_selected{color: #1EC38B;}
