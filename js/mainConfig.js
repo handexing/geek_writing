@@ -10,7 +10,7 @@ layui.config({
 		element = layui.element();
 	$ = layui.jquery;
 	tab = layui.bodyTab({
-		openTabNum: "20" //,  //最大可打开窗口数量
+		openTabNum: "5" //,  //最大可打开窗口数量
 		//			url : "json/navs.json" //获取菜单json地址
 	});
 
@@ -218,6 +218,19 @@ layui.config({
 		addTab($("#goSettingPage"));
 	});
 	
+	//所有笔记
+	$("#allNotes").click(function() {
+		$(".left_menu_details").text("所有笔记");
+	});
+	//垃圾桶
+	$("#clear_trash").click(function() {
+		$(".left_menu_details").text("垃圾桶");
+	});
+	//收藏
+	$("#starred").click(function() {
+		$(".left_menu_details").text("收藏");
+	});
+	
 	//打开笔记
 	$(".openNote").click(function() {
 		var id = $(this).attr("id");
@@ -232,10 +245,12 @@ layui.config({
 	$(".navBar .layui-nav-item .category_item a").click(function() {
 		var tt = $(this).parent().siblings("dd").children("a").removeAttr("style");
 		$(this).attr("style","color: #1EC38B;");
+		$(".left_menu_details").text($(this).attr("title"));
 	});
 	$(".navBar .m_tag_content li").click(function() {
 		var tt = $(this).siblings("li").removeAttr("style");
 		$(this).attr("style","color: #1EC38B;font-weight: bold;");
+		$(".left_menu_details").text($(this).attr("title"));
 	});
 
 	//左侧菜单切换

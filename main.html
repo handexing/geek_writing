@@ -69,20 +69,20 @@
 						<div class="my-tab-content">
 							<div class="m_menu_content">
 								<ul class="layui-nav layui-nav-tree" style="width: 200px;">
-									<li class="layui-nav-item" >
-										<a href="javascript:;" data-url="page/notes_page.html" style="color: #1EC38B;">
+									<li class="layui-nav-item" id="allNotes">
+										<a href="javascript:;" style="color: #1EC38B;">
 											<i class="iconfont icon-iconset0117" data-icon="icon-iconset0117"></i>
 											<cite>所有笔记</cite>
 										</a>
 									</li>
 									<li class="layui-nav-item" id="clear_trash">
-										<a href="javascript:;" data-url="page/trash_page.html">
+										<a href="javascript:;">
 											<i class="iconfont icon-trash" data-icon="icon-trash"></i>
 											<cite>垃圾桶</cite>
 										</a>
 									</li>
-									<li class="layui-nav-item">
-										<a href="javascript:;" data-url="page/starred_page.html">
+									<li class="layui-nav-item" id="starred">
+										<a href="javascript:;">
 											<i class="iconfont icon-star" data-icon="icon-star"></i>
 											<cite>starred</cite>
 										</a>
@@ -95,19 +95,19 @@
 										</a>
 										<dl class="layui-nav-child">
 											<dd class="category_item">
-												<a href="javascript:;" data-url="page/404.html">
+												<a href="javascript:;" title="java">
 													<i class="iconfont icon-wenjianjia" data-icon="icon-wenjianjia"></i>
 													<cite>java</cite>
 												</a>
 											</dd>
 											<dd class="category_item">
-												<a href="javascript:;" data-url="page/404.html">
+												<a href="javascript:;" title="jjjjj">
 													<i class="iconfont icon-wenjianjia" data-icon="icon-wenjianjia"></i>
 													<cite>jjjjj</cite>
 												</a>
 											</dd>
 											<dd class="category_item">
-												<a href="javascript:;" data-url="page/login/login.html" target="_blank">
+												<a href="javascript:;" title="spring">
 													<i class="iconfont icon-wenjianjia" data-icon="icon-wenjianjia"></i>
 													<cite>spring</cite>
 												</a>
@@ -119,11 +119,11 @@
 							</div>
 							<div class="m_tag_content" style="display: none;">
 								<ul>
-									<li>#&nbsp; Java <b>6</b></li>
-									<li>#&nbsp; spring <b>2</b></li>
-									<li>#&nbsp; mysql <b>7</b></li>
-									<li>#&nbsp; mybatis <b>8</b></li>
-									<li>#&nbsp; jpa <b>9</b></li>
+									<li title="Java">#&nbsp; Java <b>6</b></li>
+									<li title="spring">#&nbsp; spring <b>2</b></li>
+									<li title="mysql">#&nbsp; mysql <b>7</b></li>
+									<li title="mybatis" >#&nbsp; mybatis <b>8</b></li>
+									<li title="jpa">#&nbsp; jpa <b>9</b></li>
 								</ul>
 							</div>
 							<div class="m_more_content" style="display: none;">
