@@ -52,7 +52,7 @@
 .layui-nav-tree .layui-nav-child a{ padding-left: 40px; }
 /*handx*/
 .layui-nav-tree .layui-nav-child a:hover{ background-color:#4E5465; }
-.layui-nav-tree .layui-nav-child dd.layui-this a:hover{ background-color:#009688; }
+/*.layui-nav-tree .layui-nav-child dd.layui-this a:hover{ background-color:#009688; }*/
 
 /*右侧body*/
 #top_tabs_box{ padding-right:138px; height:40px; border-bottom:1px solid #e2e2e2; }
@@ -228,3 +228,5 @@ box-shadow:2px 2px 10px #909090;/*opera或ie9*/}
 
 
 .m_selected{color: #1EC38B;}
+
+/*.navBar .layui-nav-item .layui-nav-child .category_item:hover{background-color: red;}*/

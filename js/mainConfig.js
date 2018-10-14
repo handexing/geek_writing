@@ -205,13 +205,13 @@ layui.config({
 		ipcRenderer.send('hide-window');
 	});
 	//随机给文件夹配置颜色
-	var colors = new Array("green", "red", "orange", "orangered", "cornsilk", "blanchedalmond", "white", "floralwhite",
-		"ghostwhite", "papayawhip", "deeppink", "greenyellow", "yellowgreen", "lightyellow", "dodgerblue");
+//	var colors = new Array("green", "red", "orange", "orangered", "cornsilk", "blanchedalmond", "white", "floralwhite",
+//		"ghostwhite", "papayawhip", "deeppink", "greenyellow", "yellowgreen", "lightyellow", "dodgerblue");
 
-	$(".category_item").each(function() {
-		var num = Math.round(Math.random() * 14);
-		$(this).find("a").attr("style", "color:" + colors[num]);
-	});
+//	$(".category_item").each(function() {
+//		var num = Math.round(Math.random() * 14);
+//		$(this).find("a").attr("style", "color:" + colors[num]);
+//	});
 
 	//设置
 	$(".setting").click(function() {
@@ -226,9 +226,16 @@ layui.config({
 	
 	//左侧菜单点击事件
 	$(".navBar .layui-nav-item a").click(function() {
-		
-		//TODO
+		var tt = $(this).parent().siblings("li").children("a").removeAttr("style");
 		$(this).attr("style","color: #1EC38B;");
+	});
+	$(".navBar .layui-nav-item .category_item a").click(function() {
+		var tt = $(this).parent().siblings("dd").children("a").removeAttr("style");
+		$(this).attr("style","color: #1EC38B;");
+	});
+	$(".navBar .m_tag_content li").click(function() {
+		var tt = $(this).siblings("li").removeAttr("style");
+		$(this).attr("style","color: #1EC38B;font-weight: bold;");
 	});
 
 	//左侧菜单切换
