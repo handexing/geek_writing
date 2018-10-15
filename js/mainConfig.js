@@ -205,19 +205,20 @@ layui.config({
 		ipcRenderer.send('hide-window');
 	});
 	//随机给文件夹配置颜色
-//	var colors = new Array("green", "red", "orange", "orangered", "cornsilk", "blanchedalmond", "white", "floralwhite",
-//		"ghostwhite", "papayawhip", "deeppink", "greenyellow", "yellowgreen", "lightyellow", "dodgerblue");
+	//	var colors = new Array("green", "red", "orange", "orangered", "cornsilk", "blanchedalmond", "white", "floralwhite",
+	//		"ghostwhite", "papayawhip", "deeppink", "greenyellow", "yellowgreen", "lightyellow", "dodgerblue");
 
-//	$(".category_item").each(function() {
-//		var num = Math.round(Math.random() * 14);
-//		$(this).find("a").attr("style", "color:" + colors[num]);
-//	});
+	//	$(".category_item").each(function() {
+	//		var num = Math.round(Math.random() * 14);
+	//		$(this).find("a").attr("style", "color:" + colors[num]);
+	//	});
 
 	//设置
 	$(".setting").click(function() {
-		addTab($("#goSettingPage"));
+		//		addTab($("#goSettingPage"));
+		$("#m_Frame").attr("src", "page/setting_page.html");
 	});
-	
+
 	//所有笔记
 	$("#allNotes").click(function() {
 		$(".left_menu_details").text("所有笔记");
@@ -230,26 +231,28 @@ layui.config({
 	$("#starred").click(function() {
 		$(".left_menu_details").text("收藏");
 	});
-	
+
 	//打开笔记
 	$(".openNote").click(function() {
-		var id = $(this).attr("id");
-		addTab($("#"+id));
+		//		var id = $(this).attr("id");
+		//		addTab($("#"+id));
+
+		$("#m_Frame").attr("src", "page/note_page.html");
 	});
-	
+
 	//左侧菜单点击事件
 	$(".navBar .layui-nav-item a").click(function() {
 		var tt = $(this).parent().siblings("li").children("a").removeAttr("style");
-		$(this).attr("style","color: #1EC38B;");
+		$(this).attr("style", "color: #1EC38B;");
 	});
 	$(".navBar .layui-nav-item .category_item a").click(function() {
 		var tt = $(this).parent().siblings("dd").children("a").removeAttr("style");
-		$(this).attr("style","color: #1EC38B;");
+		$(this).attr("style", "color: #1EC38B;");
 		$(".left_menu_details").text($(this).attr("title"));
 	});
 	$(".navBar .m_tag_content li").click(function() {
 		var tt = $(this).siblings("li").removeAttr("style");
-		$(this).attr("style","color: #1EC38B;font-weight: bold;");
+		$(this).attr("style", "color: #1EC38B;font-weight: bold;");
 		$(".left_menu_details").text($(this).attr("title"));
 	});
 
@@ -259,29 +262,29 @@ layui.config({
 		var type = $(this).attr("type");
 
 		if(type == "m_menu") {
-			
+
 			$(".m_menu").find("i").attr("style", "color: #1EC38B;");
 			$(".m_tag").find("i").attr("style", "color: #fff;");
 			$(".m_more").find("i").attr("style", "color: #fff;");
-			
+
 			$(".m_menu_content").attr("style", "display: block;");
 			$(".m_tag_content").attr("style", "display: none;");
 			$(".m_more_content").attr("style", "display: none;");
 		} else if(type == "m_tag") {
-			
+
 			$(".m_tag").find("i").attr("style", "color: #1EC38B;");
 			$(".m_menu").find("i").attr("style", "color: #fff;");
 			$(".m_more").find("i").attr("style", "color: #fff;");
-			
+
 			$(".m_menu_content").attr("style", "display: none;");
 			$(".m_tag_content").attr("style", "display: block;");
 			$(".m_more_content").attr("style", "display: none;");
 		} else if(type == "m_more") {
-			
+
 			$(".m_more").find("i").attr("style", "color: #1EC38B;");
 			$(".m_tag").find("i").attr("style", "color: #fff;");
 			$(".m_menu").find("i").attr("style", "color: #fff;");
-			
+
 			$(".m_menu_content").attr("style", "display: none;");
 			$(".m_tag_content").attr("style", "display: none;");
 			$(".m_more_content").attr("style", "display: block;");
