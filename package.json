@@ -1,12 +1,13 @@
 {
-  "name": "malt_writing",
+  "name": "geek_writing",
   "version": "1.0.0",
-  "description": "麦芽写作",
+  "description": "极客创作",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "rebuild": "electron-rebuild -f -w sqlite3"
   },
-  "repository": "https://github.com/handexing/malt_writing",
+  "repository": "https://github.com/handexing/geek_writing",
   "keywords": [
     "Electron",
     "quick",
@@ -17,6 +18,12 @@
   "author": "handx",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^3.0.0"
+    "electron": "^3.0.0",
+    "electron-rebuild": "^1.8.2"
+  },
+  "dependencies": {
+    "node-pre-gyp": "^0.11.0",
+    "sequelize": "^4.39.0",
+    "sqlite3": "^4.0.2"
   }
 }

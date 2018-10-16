@@ -7,6 +7,10 @@ const {
 const path = require('path');
 const url = require('url');
 
+//const Sequelize = require('sqlite3');
+
+// npm i -g --production windows-build-tools  npm install --save sqlite3    安装sqlit
+
 // 保持一个对于 window 对象的全局引用，如果你不这样做，
 // 当 JavaScript 对象被垃圾回收， window 会被自动地关闭
 let win;
@@ -66,6 +70,30 @@ function createWindow() {
 		// 与此同时，你应该删除相应的元素。
 		win = null
 	});
+
+//	const sequelize = new Sequelize('geek_writing', 'handx', '123456', {
+//		host: 'localhost',
+//		dialect: 'sqlite',
+//
+//		pool: {
+//			max: 5,
+//			min: 0,
+//			acquire: 30000,
+//			idle: 10000
+//		},
+//
+//		// 仅限 SQLite
+//		storage: 'path/to/database.sqlite'
+//	});
+//
+//	sequelize
+//		.authenticate()
+//		.then(() => {
+//			console.log('Connection has been established successfully.');
+//		})
+//		.catch(err => {
+//			console.error('Unable to connect to the database:', err);
+//		});
 }
 
 // Electron 会在初始化后并准备
@@ -95,17 +123,17 @@ app.on('activate', () => {
 
 //退出
 ipcMain.on('window-all-closed', () => {
-    app.quit();
+	app.quit();
 });
 //小化
 ipcMain.on('hide-window', () => {
-    win.minimize();
+	win.minimize();
 });
 //最大化
 ipcMain.on('show-window', () => {
-    win.maximize();
+	win.maximize();
 });
 //还原
 ipcMain.on('orignal-window', () => {
-    win.unmaximize();
+	win.unmaximize();
 });
