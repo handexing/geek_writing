@@ -29,17 +29,17 @@ function createWindow() {
 	//frame: false 边框 resizable:false 是否可以最大化
 
 	/*win.setFullScreen(true);*/
-	globalShortcut.register('ESC', () => {
+	/*globalShortcut.register('ESC', () => {
 		win.setFullScreen(false);
-	});
+	});*/
 
-	globalShortcut.register('F11', () => {
+	/*globalShortcut.register('F11', () => {
 		win.setFullScreen(true);
 	});
 
 	globalShortcut.register('F11', () => {
 		win.setFullScreen(true);
-	});
+	});*/
 
 	globalShortcut.register('ctrl+shift+alt+e', function() {
 		let win = BrowserWindow.getFocusedWindow();
@@ -52,7 +52,7 @@ function createWindow() {
 
 	// 然后加载应用的 index.html。
 	win.loadURL(url.format({
-		pathname: path.join(__dirname, 'main.html'),
+		pathname: path.join(__dirname, '/page/login/login.html'),
 		protocol: 'file:',
 		slashes: true
 	}));
@@ -71,29 +71,6 @@ function createWindow() {
 		win = null
 	});
 
-//	const sequelize = new Sequelize('geek_writing', 'handx', '123456', {
-//		host: 'localhost',
-//		dialect: 'sqlite',
-//
-//		pool: {
-//			max: 5,
-//			min: 0,
-//			acquire: 30000,
-//			idle: 10000
-//		},
-//
-//		// 仅限 SQLite
-//		storage: 'path/to/database.sqlite'
-//	});
-//
-//	sequelize
-//		.authenticate()
-//		.then(() => {
-//			console.log('Connection has been established successfully.');
-//		})
-//		.catch(err => {
-//			console.error('Unable to connect to the database:', err);
-//		});
 }
 
 // Electron 会在初始化后并准备
