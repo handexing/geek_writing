@@ -15,6 +15,7 @@ function indexConfig() {
 			alert("123");
 		});
 
+
 	}
 
 	self.init();
