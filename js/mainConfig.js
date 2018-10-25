@@ -148,7 +148,7 @@ layui.config({base: "js/"}).use(['form', 'element', 'layer', 'jquery'], function
 		$(this).attr("style", "color: #1EC38B;");
 	});
 	$(".navBar .layui-nav-item .category_item a").click(function() {
-		var tt = $(this).parent().siblings("dd").children("a").removeAttr("style");
+		$(this).parent().siblings("dd").children("a").removeAttr("style");
 		$(this).attr("style", "color: #1EC38B;");
 		$(".left_menu_details").text($(this).attr("title"));
 	});
@@ -209,6 +209,10 @@ layui.config({base: "js/"}).use(['form', 'element', 'layer', 'jquery'], function
 		$(".layui-layout-admin").toggleClass("showMenu");
 	}
 
+ 	$(".left_menu_details .openNote").click(function() {
+        $(this).siblings('li').removeClass('menu_details_selected');  
+        $(this).addClass('menu_details_selected');
+    });
 
 	//锁屏
 	function lockPage() {
