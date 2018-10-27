@@ -1,6 +1,7 @@
 /**
  * 编辑配置js -- handx
  */
+
 function noteConfig() {
 
 	var self = this;
@@ -15,19 +16,19 @@ function noteConfig() {
 				]
 			},
 			width: "100%",
-						height: "100%",
-//			autoHeight: true,
+			height: "100%",
+			//						autoHeight: true,
 			path: '../plugins/editor/lib/',
-//			theme: "dark",
-//			previewTheme: "dark",
-//			editorTheme: "pastel-on-dark",
+			//			theme: "dark",
+			//			previewTheme: "dark",
+			//			editorTheme: "pastel-on-dark",
 			//			markdown: md,
 			codeFold: true,
-			//syncScrolling : false,
+			//			syncScrolling : false,
 			saveHTMLToTextarea: true, // 保存 HTML 到 Textarea
 			searchReplace: true,
 			watch: false, // 关闭实时预览
-//			htmlDecode: "style,script,iframe|on*", // 开启 HTML 标签解析，为了安全性，默认不开启    
+			//			htmlDecode: "style,script,iframe|on*", // 开启 HTML 标签解析，为了安全性，默认不开启    
 			//toolbar  : false,             //关闭工具栏
 			//			previewCodeHighlight : true, // 关闭预览 HTML 的代码块高亮，默认开启
 			emoji: true,
@@ -53,11 +54,16 @@ function noteConfig() {
 				//this.width("100%");
 				//this.height(480);
 				//this.resize("100%", 640);
+				var keyMap = {
+					"Ctrl-S": function(cm) {
+					}
+				};
+				this.addKeyMap(keyMap);
 			}
 		});
-
 	}
 
+	
 	self.init();
 
 }
