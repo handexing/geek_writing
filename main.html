@@ -37,7 +37,7 @@
 			<div class="layui-header header yes_drag" style="background-color:#202324;">
 				<div class="layui-main">
 
-					<div class="logo" style="cursor: pointer;"><img src="images/logo.ico" width="35" height="35" class="layui-circle"/>&nbsp;&nbsp;极客创作</div>
+					<div class="logo" style="cursor: pointer;"><img src="images/logo.ico" width="35" height="35" class="layui-circle" />&nbsp;&nbsp;极客创作</div>
 					<!-- 显示/隐藏菜单 -->
 					<div class="iconfont hideMenu icon-iconset0193 no_drag"></div>
 					<!-- 搜索 -->
@@ -87,37 +87,13 @@
 											<cite>starred</cite>
 										</a>
 									</li>
-									<li class="layui-nav-item" id="m_category">
-										<a href="javascript:;">
+									<li class="layui-nav-item">
+										<a href="javascript:;" id="m_category">
 											<i class="iconfont icon-caidan" data-icon="icon-caidan"></i>
 											<cite>我的分类</cite>
 											<span class="layui-nav-more"></span>
 										</a>
-										<dl class="layui-nav-child">
-											<dd class="category_item">
-												<a href="javascript:;" title="java">
-													<i class="iconfont icon-wenjianjia" data-icon="icon-wenjianjia"></i>
-													<cite>java</cite>
-												</a>
-											</dd>
-											<dd class="category_item">
-												<a href="javascript:;" title="jjjjj">
-													<i class="iconfont icon-wenjianjia" data-icon="icon-wenjianjia"></i>
-													<cite>jjjjj</cite>
-												</a>
-											</dd>
-											<dd class="category_item">
-												<a href="javascript:;" title="spring">
-													<i class="iconfont icon-wenjianjia" data-icon="icon-wenjianjia"></i>
-													<cite>spring</cite>
-												</a>
-											</dd>
-											<dd class="category_item">
-												<a href="javascript:;" title="spring">
-													<i class="iconfont icon-new" data-icon="icon-new"></i>
-													<cite>增加新类别</cite>
-												</a>
-											</dd>
+										<dl class="layui-nav-child" id="categorys">
 										</dl>
 									</li>
 									<span class="layui-nav-bar" style="top: 67.5px; height: 0px; opacity: 0;"></span>
@@ -128,7 +104,7 @@
 									<li title="Java">#&nbsp; Java <b>6</b></li>
 									<li title="spring">#&nbsp; spring <b>2</b></li>
 									<li title="mysql">#&nbsp; mysql <b>7</b></li>
-									<li title="mybatis" >#&nbsp; mybatis <b>8</b></li>
+									<li title="mybatis">#&nbsp; mybatis <b>8</b></li>
 									<li title="jpa">#&nbsp; jpa <b>9</b></li>
 								</ul>
 							</div>
@@ -138,10 +114,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="left_menu_details" style="width: 280px;height: 99.95%;float: right;background-color: #FBFBFB;border-right:1px solid gainsboro;">
-					<ul>
+				<div class="left_menu_details" style="width: 260px;height: 99.95%;float: right;background-color: #FBFBFB;border-right:1px solid gainsboro;">
+					<!--<ul>
 						<li class="openNote" data-url="page/note_page.html" id="goNotePage_1">
-							<cite style="display: none;">java多线程详解</cite>
 							<span class="title"><img src="images/note.png" width="20" height="20"/> <span>java多线程详解~</span></span>
 							<p>修改时间：2018-08-12 12:23:36</p>
 							<div class="m_badge">
@@ -149,7 +124,6 @@
 							</div>
 						</li>
 						<li class="openNote" data-url="page/note_page.html" id="goNotePage_2">
-							<cite style="display: none;">java多线程详解1</cite>
 							<span class="title"><img src="images/note.png" width="20" height="20"/> <span>java多线程详解1~</span></span>
 							<p>修改时间：2018-08-12 12:23:36</p>
 							<div class="m_badge">
@@ -157,7 +131,6 @@
 							</div>
 						</li>
 						<li class="openNote" data-url="page/note_page.html" id="goNotePage_3">
-							<cite style="display: none;">java多线程详解2</cite>
 							<span class="title"><img src="images/note.png" width="20" height="20"/> <span>java多线程详解2~</span></span>
 							<p>修改时间：2018-08-12 12:23:36</p>
 							<div class="m_badge">
@@ -165,7 +138,6 @@
 							</div>
 						</li>
 						<li class="openNote" data-url="page/note_page.html" id="goNotePage_4">
-							<cite style="display: none;">java多线程详解3</cite>
 							<span class="title"><img src="images/note.png" width="20" height="20"/> <span>java多线程详解3~</span></span>
 							<p>修改时间：2018-08-12 12:23:36</p>
 							<div class="m_badge">
@@ -173,7 +145,6 @@
 							</div>
 						</li>
 						<li class="openNote" data-url="page/note_page.html" id="goNotePage_5">
-							<cite style="display: none;">java多线程详解4</cite>
 							<span class="title"><img src="images/note.png" width="20" height="20"/> <span>java多线程详解4~</span></span>
 							<p>修改时间：2018-08-12 12:23:36</p>
 							<div class="m_badge">
@@ -181,31 +152,36 @@
 							</div>
 						</li>
 						<li class="openNote" data-url="page/note_page.html" id="goNotePage_6">
-							<cite style="display: none;">java多线程详解5</cite>
 							<span class="title"><img src="images/note.png" width="20" height="20"/> <span>java多线程详解5~</span></span>
 							<p>修改时间：2018-08-12 12:23:36</p>
 							<div class="m_badge">
 								<span class="tag_rim">#java</span>
 							</div>
 						</li>
-					</ul>	
+					</ul>-->
 				</div>
 			</div>
 			<!-- 右侧内容 -->
 			<div class="layui-body layui-form">
-				<iframe id="m_Frame" src="page/indexPage.html" width="100%" height="100%" 
-					frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
+				<iframe id="m_Frame" src="page/indexPage.html" width="100%" height="100%" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
 			</div>
 
-		<!-- 移动导航 -->
-		<div class="site-tree-mobile layui-hide"><i class="layui-icon">&#xe602;</i></div>
-		<div class="site-mobile-shade"></div>
+			<!-- 移动导航 -->
+			<div class="site-tree-mobile layui-hide"><i class="layui-icon">&#xe602;</i></div>
+			<div class="site-mobile-shade"></div>
 
-		<script type="text/javascript" src="plugins/jquery.min.js"></script>
-		<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-		<script type="text/javascript" src="plugins/layui/layui.js"></script>
-		<script type="text/javascript" src="js/jquery.contextMenu.min.js"></script>
-		<script type="text/javascript" src="js/mainConfig.js"></script>
 	</body>
+	<script type="text/javascript" src="plugins/jquery.min.js"></script>
+	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="plugins/layui/layui.js"></script>
+	<script type="text/javascript" src="js/jquery.contextMenu.min.js"></script>
+	<script type="text/javascript" src="js/uuidUtils.js"></script>
+	<script type="text/javascript" src="js/mainConfig.js"></script>
+
+	<script type="application/javascript">
+		$(function() {
+			new mainConfig();
+		});
+	</script>
 
 </html>

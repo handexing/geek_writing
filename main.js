@@ -6,10 +6,10 @@ const {
 } = require('electron');
 const path = require('path');
 const url = require('url');
-
-//const Sequelize = require('sqlite3');
-
-// npm i -g --production windows-build-tools  npm install --save sqlite3    安装sqlit
+const low = require('lowdb');
+const FileSync = require('lowdb/adapters/FileSync');
+const adapter = new FileSync('db/geek.json');
+const db = low(adapter);
 
 // 保持一个对于 window 对象的全局引用，如果你不这样做，
 // 当 JavaScript 对象被垃圾回收， window 会被自动地关闭
@@ -40,6 +40,21 @@ function createWindow() {
 	globalShortcut.register('F11', () => {
 		win.setFullScreen(true);
 	});*/
+	//初始化数据库
+	db.defaults({
+		user: {},
+		blogs: [],
+		tags: [],
+		categorys: [],
+		starred: []
+	}).write();
+
+	//	db.get('posts')
+	//.push({ id: 1, title: 'lowdb is awesome'})
+	//.write()
+	//	db.get('posts')
+	//.push({ id: 2, title: 'lowdb is awesome'})
+	//.write()
 
 	globalShortcut.register('ctrl+shift+alt+e', function() {
 		let win = BrowserWindow.getFocusedWindow();
